@@ -1,0 +1,99 @@
+{
+    "root": 
+    [
+        {
+            "name":"Automobiles",
+            "type":"static",
+            "children":
+            [
+                {
+                    "name": "Cars",
+                    "type": "static",
+                    "children":
+                    [
+                        {
+                            "name": "Small",
+                            "type": "static"
+                        },
+                        {
+                            "name": "Midsize",
+                            "type": "static"
+                        },
+                        {
+                            "name": "Large",
+                            "type": "static"
+                        }                                                
+                    ]
+                },
+                {
+                    "name": "Trucks",
+                    "type": "static"
+                },
+                {
+                    "name": "SUVs",
+                    "type": "static"
+                },
+                {
+                    "name": "Motorcycles",
+                    "type": "static"
+                },             
+
+            ]            
+
+        },                
+        {
+            "name":"Boats",
+            "type":"static",
+            "children":
+            [
+                {
+                    "name": "Sailboats",
+                    "type": "static"
+                },
+                {
+                    "name": "Motorboats",
+                    "type": "static"
+                },
+                {
+                    "name": "Canoes",
+                    "type": "static"
+                },
+                {
+                    "name": "Kayaks",
+                    "type": "static"
+                },
+                {
+                    "name": "Rafts",
+                    "type": "static"
+                }                                                         
+            ]            
+        },
+        {
+            "name": "Bicycles",
+            "type": "static"
+        },        
+        {
+            "name": "Spacecraft",
+            "type": "dynamic"
+        },                           
+        {
+            "name": "Aircraft",
+            "type": "static",
+            "children": 
+            [
+                {
+                    "name": "Planes",
+                    "type": "static"
+                },
+                {
+                    "name": "Helicopters",
+                    "type": "static"
+                },
+                {
+                    "name": "Blimps",
+                    "type": "static"
+                }                
+            ]
+        }   
+    ]
+}

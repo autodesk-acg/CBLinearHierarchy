@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		944FDC021862868A0021680B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FDC011862868A0021680B /* Foundation.framework */; };
+		944FDC041862868A0021680B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FDC031862868A0021680B /* CoreGraphics.framework */; };
+		944FDC061862868A0021680B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FDC051862868A0021680B /* UIKit.framework */; };
+		944FDC0C1862868B0021680B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 944FDC0A1862868B0021680B /* InfoPlist.strings */; };
+		944FDC0E1862868B0021680B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 944FDC0D1862868B0021680B /* main.m */; };
+		944FDC121862868B0021680B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 944FDC111862868B0021680B /* AppDelegate.m */; };
+		944FDC151862868B0021680B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944FDC131862868B0021680B /* Main.storyboard */; };
+		944FDC181862868B0021680B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 944FDC171862868B0021680B /* ViewController.m */; };
+		944FDC1A1862868B0021680B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 944FDC191862868B0021680B /* Images.xcassets */; };
+		944FDC211862868B0021680B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FDC201862868B0021680B /* XCTest.framework */; };
+		944FDC221862868B0021680B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FDC011862868A0021680B /* Foundation.framework */; };
+		944FDC231862868B0021680B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FDC051862868A0021680B /* UIKit.framework */; };
+		944FDC2B1862868B0021680B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 944FDC291862868B0021680B /* InfoPlist.strings */; };
+		944FDC2D1862868B0021680B /* CBLinearHierarchyDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 944FDC2C1862868B0021680B /* CBLinearHierarchyDemoTests.m */; };
+		944FDC3D186289A70021680B /* CBLinearHierarchyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 944FDC38186289A70021680B /* CBLinearHierarchyCell.m */; };
+		944FDC3E186289A70021680B /* CBLinearHierarchyFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 944FDC3A186289A70021680B /* CBLinearHierarchyFlowLayout.m */; };
+		944FDC3F186289A70021680B /* CBLinearHierarchyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 944FDC3C186289A70021680B /* CBLinearHierarchyViewController.m */; };
+		B2ED35E01868E6EA00B383F9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = B2ED35DF1868E6EA00B383F9 /* data.json */; };
+		B2ED35E21868EA9700B383F9 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2ED35E11868EA9700B383F9 /* data.plist */; };
+		B2ED35E5186E920C00B383F9 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ED35E4186E920C00B383F9 /* CustomCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		944FDC241862868B0021680B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 944FDBF61862868A0021680B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 944FDBFD1862868A0021680B;
+			remoteInfo = CBLinearHierarchyDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		944FDBFE1862868A0021680B /* CBLinearHierarchyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBLinearHierarchyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		944FDC011862868A0021680B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		944FDC031862868A0021680B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		944FDC051862868A0021680B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		944FDC091862868B0021680B /* CBLinearHierarchyDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CBLinearHierarchyDemo-Info.plist"; sourceTree = "<group>"; };
+		944FDC0B1862868B0021680B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		944FDC0D1862868B0021680B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		944FDC0F1862868B0021680B /* CBLinearHierarchyDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CBLinearHierarchyDemo-Prefix.pch"; sourceTree = "<group>"; };
+		944FDC101862868B0021680B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		944FDC111862868B0021680B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		944FDC141862868B0021680B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		944FDC161862868B0021680B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		944FDC171862868B0021680B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		944FDC191862868B0021680B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		944FDC1F1862868B0021680B /* CBLinearHierarchyDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CBLinearHierarchyDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		944FDC201862868B0021680B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		944FDC281862868B0021680B /* CBLinearHierarchyDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CBLinearHierarchyDemoTests-Info.plist"; sourceTree = "<group>"; };
+		944FDC2A1862868B0021680B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		944FDC2C1862868B0021680B /* CBLinearHierarchyDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBLinearHierarchyDemoTests.m; sourceTree = "<group>"; };
+		944FDC37186289A70021680B /* CBLinearHierarchyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBLinearHierarchyCell.h; path = ../CBLinearHierarchyCell.h; sourceTree = "<group>"; };
+		944FDC38186289A70021680B /* CBLinearHierarchyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBLinearHierarchyCell.m; path = ../CBLinearHierarchyCell.m; sourceTree = "<group>"; };
+		944FDC39186289A70021680B /* CBLinearHierarchyFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBLinearHierarchyFlowLayout.h; path = ../CBLinearHierarchyFlowLayout.h; sourceTree = "<group>"; };
+		944FDC3A186289A70021680B /* CBLinearHierarchyFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBLinearHierarchyFlowLayout.m; path = ../CBLinearHierarchyFlowLayout.m; sourceTree = "<group>"; };
+		944FDC3B186289A70021680B /* CBLinearHierarchyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBLinearHierarchyViewController.h; path = ../CBLinearHierarchyViewController.h; sourceTree = "<group>"; };
+		944FDC3C186289A70021680B /* CBLinearHierarchyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBLinearHierarchyViewController.m; path = ../CBLinearHierarchyViewController.m; sourceTree = "<group>"; };
+		B2ED35DF1868E6EA00B383F9 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		B2ED35E11868EA9700B383F9 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		B2ED35E3186E920C00B383F9 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		B2ED35E4186E920C00B383F9 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		944FDBFB1862868A0021680B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				944FDC041862868A0021680B /* CoreGraphics.framework in Frameworks */,
+				944FDC061862868A0021680B /* UIKit.framework in Frameworks */,
+				944FDC021862868A0021680B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		944FDC1C1862868B0021680B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				944FDC211862868B0021680B /* XCTest.framework in Frameworks */,
+				944FDC231862868B0021680B /* UIKit.framework in Frameworks */,
+				944FDC221862868B0021680B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		944FDBF51862868A0021680B = {
+			isa = PBXGroup;
+			children = (
+				944FDC36186289980021680B /* CBLinearHierarchy */,
+				944FDC071862868A0021680B /* CBLinearHierarchyDemo */,
+				944FDC261862868B0021680B /* CBLinearHierarchyDemoTests */,
+				944FDC001862868A0021680B /* Frameworks */,
+				944FDBFF1862868A0021680B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		944FDBFF1862868A0021680B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				944FDBFE1862868A0021680B /* CBLinearHierarchyDemo.app */,
+				944FDC1F1862868B0021680B /* CBLinearHierarchyDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		944FDC001862868A0021680B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				944FDC011862868A0021680B /* Foundation.framework */,
+				944FDC031862868A0021680B /* CoreGraphics.framework */,
+				944FDC051862868A0021680B /* UIKit.framework */,
+				944FDC201862868B0021680B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		944FDC071862868A0021680B /* CBLinearHierarchyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B2ED35DF1868E6EA00B383F9 /* data.json */,
+				B2ED35E11868EA9700B383F9 /* data.plist */,
+				944FDC101862868B0021680B /* AppDelegate.h */,
+				944FDC111862868B0021680B /* AppDelegate.m */,
+				944FDC131862868B0021680B /* Main.storyboard */,
+				944FDC161862868B0021680B /* ViewController.h */,
+				944FDC171862868B0021680B /* ViewController.m */,
+				B2ED35E3186E920C00B383F9 /* CustomCell.h */,
+				B2ED35E4186E920C00B383F9 /* CustomCell.m */,
+				944FDC191862868B0021680B /* Images.xcassets */,
+				944FDC081862868B0021680B /* Supporting Files */,
+			);
+			path = CBLinearHierarchyDemo;
+			sourceTree = "<group>";
+		};
+		944FDC081862868B0021680B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				944FDC091862868B0021680B /* CBLinearHierarchyDemo-Info.plist */,
+				944FDC0A1862868B0021680B /* InfoPlist.strings */,
+				944FDC0D1862868B0021680B /* main.m */,
+				944FDC0F1862868B0021680B /* CBLinearHierarchyDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		944FDC261862868B0021680B /* CBLinearHierarchyDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				944FDC2C1862868B0021680B /* CBLinearHierarchyDemoTests.m */,
+				944FDC271862868B0021680B /* Supporting Files */,
+			);
+			path = CBLinearHierarchyDemoTests;
+			sourceTree = "<group>";
+		};
+		944FDC271862868B0021680B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				944FDC281862868B0021680B /* CBLinearHierarchyDemoTests-Info.plist */,
+				944FDC291862868B0021680B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		944FDC36186289980021680B /* CBLinearHierarchy */ = {
+			isa = PBXGroup;
+			children = (
+				944FDC37186289A70021680B /* CBLinearHierarchyCell.h */,
+				944FDC38186289A70021680B /* CBLinearHierarchyCell.m */,
+				944FDC39186289A70021680B /* CBLinearHierarchyFlowLayout.h */,
+				944FDC3A186289A70021680B /* CBLinearHierarchyFlowLayout.m */,
+				944FDC3B186289A70021680B /* CBLinearHierarchyViewController.h */,
+				944FDC3C186289A70021680B /* CBLinearHierarchyViewController.m */,
+			);
+			name = CBLinearHierarchy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		944FDBFD1862868A0021680B /* CBLinearHierarchyDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 944FDC301862868B0021680B /* Build configuration list for PBXNativeTarget "CBLinearHierarchyDemo" */;
+			buildPhases = (
+				944FDBFA1862868A0021680B /* Sources */,
+				944FDBFB1862868A0021680B /* Frameworks */,
+				944FDBFC1862868A0021680B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CBLinearHierarchyDemo;
+			productName = CBLinearHierarchyDemo;
+			productReference = 944FDBFE1862868A0021680B /* CBLinearHierarchyDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		944FDC1E1862868B0021680B /* CBLinearHierarchyDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 944FDC331862868B0021680B /* Build configuration list for PBXNativeTarget "CBLinearHierarchyDemoTests" */;
+			buildPhases = (
+				944FDC1B1862868B0021680B /* Sources */,
+				944FDC1C1862868B0021680B /* Frameworks */,
+				944FDC1D1862868B0021680B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				944FDC251862868B0021680B /* PBXTargetDependency */,
+			);
+			name = CBLinearHierarchyDemoTests;
+			productName = CBLinearHierarchyDemoTests;
+			productReference = 944FDC1F1862868B0021680B /* CBLinearHierarchyDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		944FDBF61862868A0021680B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Chris Benoit";
+				TargetAttributes = {
+					944FDC1E1862868B0021680B = {
+						TestTargetID = 944FDBFD1862868A0021680B;
+					};
+				};
+			};
+			buildConfigurationList = 944FDBF91862868A0021680B /* Build configuration list for PBXProject "CBLinearHierarchyDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 944FDBF51862868A0021680B;
+			productRefGroup = 944FDBFF1862868A0021680B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				944FDBFD1862868A0021680B /* CBLinearHierarchyDemo */,
+				944FDC1E1862868B0021680B /* CBLinearHierarchyDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		944FDBFC1862868A0021680B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				944FDC1A1862868B0021680B /* Images.xcassets in Resources */,
+				944FDC0C1862868B0021680B /* InfoPlist.strings in Resources */,
+				944FDC151862868B0021680B /* Main.storyboard in Resources */,
+				B2ED35E21868EA9700B383F9 /* data.plist in Resources */,
+				B2ED35E01868E6EA00B383F9 /* data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		944FDC1D1862868B0021680B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				944FDC2B1862868B0021680B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		944FDBFA1862868A0021680B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				944FDC3F186289A70021680B /* CBLinearHierarchyViewController.m in Sources */,
+				944FDC181862868B0021680B /* ViewController.m in Sources */,
+				944FDC121862868B0021680B /* AppDelegate.m in Sources */,
+				944FDC0E1862868B0021680B /* main.m in Sources */,
+				B2ED35E5186E920C00B383F9 /* CustomCell.m in Sources */,
+				944FDC3D186289A70021680B /* CBLinearHierarchyCell.m in Sources */,
+				944FDC3E186289A70021680B /* CBLinearHierarchyFlowLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		944FDC1B1862868B0021680B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				944FDC2D1862868B0021680B /* CBLinearHierarchyDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		944FDC251862868B0021680B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 944FDBFD1862868A0021680B /* CBLinearHierarchyDemo */;
+			targetProxy = 944FDC241862868B0021680B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		944FDC0A1862868B0021680B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				944FDC0B1862868B0021680B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		944FDC131862868B0021680B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				944FDC141862868B0021680B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		944FDC291862868B0021680B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				944FDC2A1862868B0021680B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		944FDC2E1862868B0021680B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		944FDC2F1862868B0021680B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		944FDC311862868B0021680B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBLinearHierarchyDemo/CBLinearHierarchyDemo-Prefix.pch";
+				INFOPLIST_FILE = "CBLinearHierarchyDemo/CBLinearHierarchyDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		944FDC321862868B0021680B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBLinearHierarchyDemo/CBLinearHierarchyDemo-Prefix.pch";
+				INFOPLIST_FILE = "CBLinearHierarchyDemo/CBLinearHierarchyDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		944FDC341862868B0021680B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CBLinearHierarchyDemo.app/CBLinearHierarchyDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBLinearHierarchyDemo/CBLinearHierarchyDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CBLinearHierarchyDemoTests/CBLinearHierarchyDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		944FDC351862868B0021680B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CBLinearHierarchyDemo.app/CBLinearHierarchyDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBLinearHierarchyDemo/CBLinearHierarchyDemo-Prefix.pch";
+				INFOPLIST_FILE = "CBLinearHierarchyDemoTests/CBLinearHierarchyDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		944FDBF91862868A0021680B /* Build configuration list for PBXProject "CBLinearHierarchyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				944FDC2E1862868B0021680B /* Debug */,
+				944FDC2F1862868B0021680B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		944FDC301862868B0021680B /* Build configuration list for PBXNativeTarget "CBLinearHierarchyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				944FDC311862868B0021680B /* Debug */,
+				944FDC321862868B0021680B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		944FDC331862868B0021680B /* Build configuration list for PBXNativeTarget "CBLinearHierarchyDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				944FDC341862868B0021680B /* Debug */,
+				944FDC351862868B0021680B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 944FDBF61862868A0021680B /* Project object */;
+}
