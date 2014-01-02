@@ -50,7 +50,9 @@ CBLinearHierarchy uses an implementation of UICollectionViewFlowLayout. Rather t
 * **CBLinearHierarchyFlowLayout**, a subclass of UICollectionViewFlowLayout, to handle the layout and positioning of the cells
 * **CBLinearHierarchyCell**, a subclass of UICollectionViewCell, to provide some public properties that the ViewController and Layout need, as well as some convenience defaults
 
-For example, an initial starting point might have five items, all at section 0.  When a user selects the 3rd item, all the other items are removed from that section (0), and that item's children are added into a new section (section 1). A similar process happens when collapsing back to a lower level, but reversed.
+The initial state displays cells representing all the "top level / root" items to the user, and inserts them into the first section of the collection.  Whenever a selection is made indicating that the user wants to drill down into the hierarchy, all other items at the same section of the selection in the data model are removed from the collection, and a new section containing that node's child items is inserted. Correspondingly, when a previous section is selected, any section that was added beyond that selection is deleted, and that selection's child items are restored as the collection "collapses".
+
+For example, an initial starting point might have five items, all at section 0.  When a user selects item 2, items 0, 1 ,3 and 4 are removed, and item 2's children are added into a new section (section 1). A similar corresponding process happens when collapsing back to a lower level, but reversed.
 
 ##Usage
 
