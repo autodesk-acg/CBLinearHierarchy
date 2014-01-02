@@ -3,7 +3,7 @@
 //  CBLinearHierarchyDemo
 //
 //  Created by Chris Benoit on 12/27/2013.
-//  Copyright (c) 2013 Chris Benoit. All rights reserved.
+//  Copyright (c) 2013 Autodesk Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
