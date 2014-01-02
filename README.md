@@ -44,15 +44,19 @@ In this example, calculating the number of items in a section applies custom log
 
 ##How it Works
 
-CBLinearHierarchy uses an implementation of UICollectionViewFlowLayout. Rather than using UICollectionView's supplementary views or decoration views, sections and items are added/removed from the data source based on a selection the user made.  
+CBLinearHierarchy uses an implementation of UICollectionViewFlowLayout. Rather than using UICollectionView's supplementary views or decoration views, sections and items are added/removed from the data source based on a selection the user made.  It's actually a combination of three different classes:
 
-For example, an initial starting point might have five items, all at section 0.  When a user selects the 3rd item, all the other items are removed from that section (0), and that item's children are added into a new section (section 1). A similar process happens when collapsing back to a lower level, but reversed.`
+* **CBLinearHierarchyViewController**, a subclass of UICollectionViewController, to override some of the UICollectionView delegate and datasource methods  
+* **CBLinearHierarchyFlowLayout**, a subclass of UICollectionViewFlowLayout, to handle the layout and positioning of the cells
+* **CBLinearHierarchyCell**, a subclass of UICollectionViewCell, to provide some public properties that the ViewController and Layout need, as well as some convenience defaults
+
+For example, an initial starting point might have five items, all at section 0.  When a user selects the 3rd item, all the other items are removed from that section (0), and that item's children are added into a new section (section 1). A similar process happens when collapsing back to a lower level, but reversed.
 
 ##Usage
 
-There are two primary ways that CBLinearHierarchy can be used
+CBLinearHierarchy can be used directly. Add it's view as a subview to an existing UIViewController's view, and set your implementing ViewController as the delegate and data source if there's a need to incorporate any dynamically generated content.  Alternatively, use View Controller Containment to add it as a child view controller. An example of the first option is shown in the demo project and summarized below.
 
-1) Use it directly, add it's view as a subview to an existing UIViewController's view, and set your implementing ViewController as the delegate and data source for any dynamically generated content.  An example of this is shown in the demo project.
+For additional control over colors, sizes, customizations, etc, you can subclass CBLinearHierarchyViewController and CBLinearHierarchyCell, and use it in one of the scenarios described above.
 
 ###Horizontal Implementation
 
@@ -98,5 +102,14 @@ There are two primary ways that CBLinearHierarchy can be used
     [self.view addSubview:self.lhVC.view];
 ```
 
-2) Subclass it.  This will allow you to customize colors, sizes, dynamic content, etc more directly.
+Cells don't need to all be the same size.  You can use variable width/height cells (not shown in the demo animation) setting your implementing View Controller conform to the UICollectionViewDelegateFlowLayout protocol, and have your code handle the specific instances when you need different sized cells.
+
+```objective-c
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+```
+
+If you have no need for more than one size, simply set the itemSize property on the layout object.
+
+
+
 
