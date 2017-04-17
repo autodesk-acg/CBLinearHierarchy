@@ -13,7 +13,7 @@ CBLinearHierarchy provides an alternative approach through a custom UICollection
 
 [Video of vertical animation example](https://dl.dropboxusercontent.com/u/19417682/verticalHierarchy2.mov)
 
-##Displaying Content
+## Displaying Content
 
 CBLinearHierarchy includes support for user-specified hierarchy data via the following formats:  
 
@@ -42,7 +42,7 @@ In this example, calculating the number of items in a section applies custom log
 }
 ```
 
-##How it Works
+## How it Works
 
 CBLinearHierarchy uses an implementation of UICollectionViewFlowLayout. Rather than using UICollectionView's supplementary views or decoration views, sections and items are added/removed from the data source based on a selection the user made.  It's actually a combination of three different classes:
 
@@ -54,13 +54,13 @@ The initial state displays cells representing all the "top level / root" items t
 
 For example, an initial starting point might have five items, all at section 0.  When a user selects item 2, items 0, 1 ,3 and 4 are removed, and item 2's children are added into a new section (section 1). A similar corresponding process happens when collapsing back to a lower level, but reversed.
 
-##Usage
+## Usage
 
 CBLinearHierarchy can be used directly. Add it's view as a subview to an existing UIViewController's view, and set your implementing ViewController as the delegate and data source if there's a need to incorporate any dynamically generated content.  Alternatively, use View Controller Containment to add it as a child view controller. An example of the first option is shown in the demo project and summarized below.
 
 For additional control over colors, sizes, customizations, etc, you can subclass CBLinearHierarchyViewController and CBLinearHierarchyCell, and use it in one of the scenarios described above.
 
-###Horizontal Implementation
+### Horizontal Implementation
 
 ```objective-c
     self.lhLayout = [[CBLinearHierarchyFlowLayout alloc] init];
@@ -82,7 +82,7 @@ For additional control over colors, sizes, customizations, etc, you can subclass
     [self.view addSubview:self.lhVC.view];
 ```
 
-###Vertical Implementation
+### Vertical Implementation
 
 ```objective-c
     self.lhLayout = [[CBLinearHierarchyFlowLayout alloc] init];
